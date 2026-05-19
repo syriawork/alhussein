@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - الحسين</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>الحسين</h1>
+                <p class="tagline">جودة وأناقة في كل التفاصيل</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="products.html">المنتجات</a></li>
+                <li><a href="about.html">عن الشركة</a></li>
+                <li><a href="contact.html" class="active">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>اتصل بنا</h1>
+        <p>نحن هنا للإجابة على جميع أسئلتك</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2>أرسل لنا رسالة</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">الاسم *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">الموضوع *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">اختر الموضوع</option>
+                                <option value="inquiry">استفسار عام</option>
+                                <option value="order">استفسار عن الطلب</option>
+                                <option value="complaint">شكوى أو اقتراح</option>
+                                <option value="wholesale">طلب جملة</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">الرسالة *</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </form>
+                    <div id="formMessage" class="form-message"></div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2>معلومات التواصل</h2>
+                    
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>العنوان</h4>
+                            <p>الرياض، حي الملك فهد</p>
+                            <p>الطريق الدائري الشرقي</p>
+                            <p>المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <p>+966 50 123 4567</p>
+                            <p>+966 11 456 7890</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p>info@alhussein.com</p>
+                            <p>support@alhussein.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>ساعات العمل</h4>
+                            <p>الأحد - الخميس: 9:00 ص - 10:00 م</p>
+                            <p>الجمعة والسبت: 2:00 م - 10:00 م</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="social-section">
+                        <h4>تابعنا على وسائل التواصل</h4>
+                        <div class="social-links-large">
+                            <a href="https://facebook.com" target="_blank">
+                                <i class="fab fa-facebook"></i> فيسبوك
+                            </a>
+                            <a href="https://instagram.com" target="_blank">
+                                <i class="fab fa-instagram"></i> إنستاجرام
+                            </a>
+                            <a href="https://twitter.com" target="_blank">
+                                <i class="fab fa-twitter"></i> تويتر
+                            </a>
+                            <a href="https://wa.me" target="_blank">
+                                <i class="fab fa-whatsapp"></i> واتس آب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq">
+        <div class="container">
+            <h2>الأسئلة الشائعة</h2>
+            <div class="faq-items">
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-chevron-down"></i> كيف أطلب منتجات؟
+                    </h3>
+                    <p class="faq-answer">
+                        يمكنك الطلب من خلال موقعنا الإلكتروني مباشرة أو التواصل معنا عبر الهاتف أو البريد الإلكتروني.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-chevron-down"></i> ما هي تكاليف الشحن؟
+                    </h3>
+                    <p class="faq-answer">
+                        الشحن مجاني للطلبات فوق 500 ريال. للطلبات الأقل، تكلفة الشحن 50 ريال داخل الرياض و100 ريال خارجها.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-chevron-down"></i> هل هناك ضمان على المنتجات؟
+                    </h3>
+                    <p class="faq-answer">
+                        نعم، جميع منتجاتنا مضمونة لمدة سنة واحدة من تاريخ الشراء ضد عيوب التصنيع.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-chevron-down"></i> كم مدة التوصيل؟
+                    </h3>
+                    <p class="faq-answer">
+                        التوصيل يستغرق 2-3 أيام عمل داخل الرياض و4-5 أيام عمل خارجها.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-chevron-down"></i> هل توجد عروض أو خصومات؟
+                    </h3>
+                    <p class="faq-answer">
+                        نعم، لدينا عروض موسمية ودعم للطلبات الكبيرة. تابع موقعنا للعروض الجديدة.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">
+                        <i class="fas fa-chevron-down"></i> هل تقبلون طلبات الجملة؟
+                    </h3>
+                    <p class="faq-answer">
+                        نعم، نقبل طلبات الجملة بأسعار خاصة. يرجى التواصل معنا للحصول على عرض خاص.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>الحسين</h4>
+                    <p>متخصصون في صناعة الملابس الداخلية الفاخرة منذ 2010</p>
+                </div>
+                <div class="footer-section">
+                    <h4>الروابط السريعة</h4>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="products.html">المنتجات</a></li>
+                        <li><a href="about.html">عن الشركة</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>تابعنا</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>تواصل معنا</h4>
+                    <p>الهاتف: +966 50 123 4567</p>
+                    <p>البريد: info@alhussein.com</p>
+                    <p>العنوان: الرياض، المملكة العربية السعودية</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 الحسين. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
