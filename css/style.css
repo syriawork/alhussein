@@ -13,6 +13,7 @@
     --secondary-color: #8b0000;
     --light-color: #f5f5f5;
     --dark-color: #1a1a1a;
+    --background-color: #ffffff;
     --border-radius: 8px;
     --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -21,7 +22,39 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
-    background-color: #fff;
+    background-color: var(--background-color);
+}
+
+body.theme-default {
+    --primary-color: #c41e3a;
+    --secondary-color: #8b0000;
+    --light-color: #f5f5f5;
+    --background-color: #ffffff;
+}
+
+body.theme-blue {
+    --primary-color: #1f618d;
+    --secondary-color: #145a8d;
+    --light-color: #eef6fb;
+    --background-color: #f4f8ff;
+}
+
+body.theme-green {
+    --primary-color: #1d8348;
+    --secondary-color: #138d75;
+    --light-color: #ecfbf5;
+    --background-color: #f3fcf6;
+}
+
+body.lang-en {
+    direction: ltr;
+}
+
+body.theme-warm {
+    --primary-color: #b9770e;
+    --secondary-color: #a04000;
+    --light-color: #fff4e6;
+    --background-color: #fff8f0;
 }
 
 .container {
@@ -48,10 +81,53 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .logo {
     flex: 1;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.settings-panel {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.setting {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+}
+
+.setting label {
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.settings-panel select {
+    border-radius: var(--border-radius);
+    border: 1px solid rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white;
+    padding: 8px 10px;
+    min-width: 120px;
+}
+
+.settings-panel select option {
+    color: #333;
 }
 
 .logo h1 {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>الحسين - صناعة الملابس الداخلية الفاخرة</title>
+    <title data-i18n-title="pageTitleHome">الحسين - صناعة الملابس الداخلية الفاخرة</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,14 +12,34 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>الحسين</h1>
-                <p class="tagline">جودة وأناقة في كل التفاصيل</p>
+                <h1 data-i18n="brandName">الحسين</h1>
+                <p class="tagline" data-i18n="brandTagline">جودة وأناقة في كل التفاصيل</p>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">الرئيسية</a></li>
-                <li><a href="products.html">المنتجات</a></li>
-                <li><a href="about.html">عن الشركة</a></li>
-            </ul>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active" data-i18n="homeText">الرئيسية</a></li>
+                    <li><a href="products.html" data-i18n="productsText">المنتجات</a></li>
+                    <li><a href="about.html" data-i18n="aboutText">عن الشركة</a></li>
+                </ul>
+                <div class="settings-panel">
+                    <div class="setting">
+                        <label for="language-switcher" data-i18n="languageLabel">اللغة</label>
+                        <select id="language-switcher">
+                            <option value="ar" data-i18n="langAr">العربية</option>
+                            <option value="en" data-i18n="langEn">English</option>
+                        </select>
+                    </div>
+                    <div class="setting">
+                        <label for="theme-switcher" data-i18n="themeLabel">لون الموقع</label>
+                        <select id="theme-switcher">
+                            <option value="default" data-i18n="defaultTheme">افتراضي</option>
+                            <option value="blue" data-i18n="blueTheme">أزرق</option>
+                            <option value="green" data-i18n="greenTheme">أخضر</option>
+                            <option value="warm" data-i18n="warmTheme">دافئ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
@@ -27,9 +47,9 @@
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
-                <h2>مرحباً بك في الحسين</h2>
-                <p>نحن نصنع أفضل الملابس الداخلية بأعلى معايير الجودة</p>
-                <a href="products.html" class="btn btn-primary">استكشف المنتجات</a>
+                <h2 data-i18n="heroHeading">مرحباً بك في الحسين</h2>
+                <p data-i18n="heroText">نحن نصنع أفضل الملابس الداخلية بأعلى معايير الجودة</p>
+                <a href="products.html" class="btn btn-primary" data-i18n="heroButton">استكشف المنتجات</a>
             </div>
             <div class="hero-image-wrapper">
                 <img src="images/1779099041218.png" alt="الحسين" class="hero-image">
@@ -40,27 +60,27 @@
     <!-- Features Section -->
     <section class="features">
         <div class="container">
-            <h2>لماذا تختار الحسين؟</h2>
+            <h2 data-i18n="featuresTitle">لماذا تختار الحسين؟</h2>
             <div class="features-grid">
                 <div class="feature-card">
                     <i class="fas fa-crown"></i>
-                    <h3>جودة عالية</h3>
-                    <p>نستخدم أفضل الخامات والمواد الطبيعية المستوردة</p>
+                    <h3 data-i18n="feature1Title">جودة عالية</h3>
+                    <p data-i18n="feature1Text">نستخدم أفضل الخامات والمواد الطبيعية المستوردة</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-hand-holding-heart"></i>
-                    <h3>راحة فائقة</h3>
-                    <p>تصاميم مريحة وأنيقة تناسب جميع الأذواق</p>
+                    <h3 data-i18n="feature2Title">راحة فائقة</h3>
+                    <p data-i18n="feature2Text">تصاميم مريحة وأنيقة تناسب جميع الأذواق</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-factory"></i>
-                    <h3>صناعة حرفية</h3>
-                    <p>كل منتج يتم صنعه بعناية ودقة عالية</p>
+                    <h3 data-i18n="feature3Title">صناعة حرفية</h3>
+                    <p data-i18n="feature3Text">كل منتج يتم صنعه بعناية ودقة عالية</p>
                 </div>
                 <div class="feature-card">
                     <i class="fas fa-leaf"></i>
-                    <h3>صديقة للبيئة</h3>
-                    <p>نستخدم مواد صديقة للبيئة ومستدامة</p>
+                    <h3 data-i18n="feature4Title">صديقة للبيئة</h3>
+                    <p data-i18n="feature4Text">نستخدم مواد صديقة للبيئة ومستدامة</p>
                 </div>
             </div>
         </div>
@@ -69,34 +89,34 @@
     <!-- Featured Products -->
     <section class="featured-products">
         <div class="container">
-            <h2>المنتجات المميزة</h2>
+            <h2 data-i18n="featuredProductsTitle">المنتجات المميزة</h2>
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
                         <i class="fas fa-shirt"></i>
                     </div>
-                    <h3>ملابس داخلية رجالية</h3>
-                    <p>مصنوعة من أفضل الأقمشة القطنية</p>
+                    <h3 data-i18n="productCardTitleMen">ملابس داخلية رجالية</h3>
+                    <p data-i18n="productDetailsClassic">مصنوعة من أفضل الأقمشة القطنية</p>
                     <div class="price">10,000 ل.س</div>
-                    <a href="products.html" class="btn btn-secondary">عرض التفاصيل</a>
+                    <a href="products.html" class="btn btn-secondary" data-i18n="detailsButton">عرض التفاصيل</a>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <h3>ملابس داخلية نسائية</h3>
-                    <p>تصاميم فاخرة مع الراحة القصوى</p>
+                    <h3 data-i18n="productCardTitleWomen">ملابس داخلية نسائية</h3>
+                    <p data-i18n="productDetailsLuxury">تصاميم فاخرة مع الراحة القصوى</p>
                     <div class="price">12,000 ل.س</div>
-                    <a href="products.html" class="btn btn-secondary">عرض التفاصيل</a>
+                    <a href="products.html" class="btn btn-secondary" data-i18n="detailsButton">عرض التفاصيل</a>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
                         <i class="fas fa-baby"></i>
                     </div>
-                    <h3>ملابس داخلية أطفال</h3>
-                    <p>آمنة وناعمة ومريحة للصغار</p>
+                    <h3 data-i18n="productCardTitleKids">ملابس داخلية أطفال</h3>
+                    <p data-i18n="productDetailsSport">آمنة وناعمة ومريحة للصغار</p>
                     <div class="price">7,000 ل.س</div>
-                    <a href="products.html" class="btn btn-secondary">عرض التفاصيل</a>
+                    <a href="products.html" class="btn btn-secondary" data-i18n="detailsButton">عرض التفاصيل</a>
                 </div>
             </div>
         </div>
@@ -127,22 +147,22 @@
     <!-- Testimonials -->
     <section class="testimonials">
         <div class="container">
-            <h2>آراء العملاء</h2>
+            <h2 data-i18n="testimonialsTitle">آراء العملاء</h2>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"منتجات رائعة وجودة عالية جداً. أنا راضي جداً عن الشراء"</p>
-                    <p class="author">- أحمد محمد</p>
+                    <p data-i18n="testimonialText1">"منتجات رائعة وجودة عالية جداً. أنا راضي جداً عن الشراء"</p>
+                    <p class="author" data-i18n="testimonialAuthor1">- أحمد محمد</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"الخدمة والجودة ممتازة. أوصي الجميع بالشراء من الحسين"</p>
-                    <p class="author">- فاطمة علي</p>
+                    <p data-i18n="testimonialText2">"الخدمة والجودة ممتازة. أوصي الجميع بالشراء من الحسين"</p>
+                    <p class="author" data-i18n="testimonialAuthor2">- فاطمة علي</p>
                 </div>
                 <div class="testimonial-card">
                     <div class="stars">★★★★★</div>
-                    <p>"أفضل ملابس داخلية جربتها. تستحق السعر تماماً"</p>
-                    <p class="author">- محمود حسين</p>
+                    <p data-i18n="testimonialText3">"أفضل ملابس داخلية جربتها. تستحق السعر تماماً"</p>
+                    <p class="author" data-i18n="testimonialAuthor3">- محمود حسين</p>
                 </div>
             </div>
         </div>
@@ -153,26 +173,26 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>الحسين</h4>
-                    <p>متخصصون في صناعة الملابس الداخلية الفاخرة منذ 2020</p>
+                    <h4 data-i18n="footerTitleBrand">الحسين</h4>
+                    <p data-i18n="footerBrandText">متخصصون في صناعة الملابس الداخلية الفاخرة منذ 2020</p>
                 </div>
                 <div class="footer-section">
-                    <h4>الروابط السريعة</h4>
+                    <h4 data-i18n="footerLinksTitle">الروابط السريعة</h4>
                     <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="products.html">المنتجات</a></li>
-                        <li><a href="about.html">عن الشركة</a></li>
+                        <li><a href="index.html" data-i18n="homeText">الرئيسية</a></li>
+                        <li><a href="products.html" data-i18n="productsText">المنتجات</a></li>
+                        <li><a href="about.html" data-i18n="aboutText">عن الشركة</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>تواصل معنا</h4>
-                    <p>الهاتف: 00963947029969</p>
-                    <p>البريد: info@alhussein.com</p>
-                    <p>العنوان: سوريا - حلب - باب انطاكيه</p>
+                    <h4 data-i18n="footerContactTitle">تواصل معنا</h4>
+                    <p data-i18n="contactPhoneLine1">الهاتف: 00963947029969</p>
+                    <p data-i18n="contactEmailLine1">البريد: info@alhussein.com</p>
+                    <p data-i18n="contactAddressLine1">العنوان: سوريا - حلب - باب انطاكيه</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 الحسين. جميع الحقوق محفوظة.</p>
+                <p data-i18n="footerCopy">&copy; 2026 الحسين. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>

@@ -1,6 +1,6 @@
 @echo off
 REM إعداد سريع لرفع المشروع على GitHub
-SET USERNAME=phmohammad84-svg
+SET USERNAME=syriawork
 SET REPO=alhussein
 
 IF "%USERNAME%"=="<USERNAME>" (

@@ -203,7 +203,7 @@ e:\husen\
 ### الخيار الأفضل: GitHub Pages
 
 1. أنشئ حساب GitHub وعبِّئ مستودعًا جديدًا عامًا `Public`.
-2. تم إعداد `deploy.bat` بالفعل للمستودع `phmohammad84-svg/alhussein`.
+2. تم إعداد `deploy.bat` بالفعل للمستودع `syriawork/alhussein`.
 3. افتح نافذة الأوامر داخل المجلد `e:\husen` ثم شغّل:
 
 ```bat
@@ -214,7 +214,7 @@ deploy.bat
 5. اذهب إلى `Settings` > `Pages`.
 6. اختر `Branch: main` و `Folder: / (root)` ثم اضغط `Save`.
 7. انتظر قليلاً ثم ستظهر لك رابط الموقع مثل:
-   `https://phmohammad84-svg.github.io/alhussein`
+   `https://syriawork.github.io/alhussein`
 
 ### بديل سريع: Netlify
 

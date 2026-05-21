@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا - الحسين</title>
+    <title data-i18n-title="pageTitleContact">اتصل بنا - الحسين</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -12,22 +12,42 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <h1>الحسين</h1>
-                <p class="tagline">جودة وأناقة في كل التفاصيل</p>
+                <h1 data-i18n="brandName">الحسين</h1>
+                <p class="tagline" data-i18n="brandTagline">جودة وأناقة في كل التفاصيل</p>
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html">الرئيسية</a></li>
-                <li><a href="products.html">المنتجات</a></li>
-                <li><a href="about.html">عن الشركة</a></li>
-                <li><a href="contact.html" class="active">اتصل بنا</a></li>
-            </ul>
+            <div class="nav-actions">
+                <ul class="nav-links">
+                    <li><a href="index.html" data-i18n="homeText">الرئيسية</a></li>
+                    <li><a href="products.html" data-i18n="productsText">المنتجات</a></li>
+                    <li><a href="about.html" data-i18n="aboutText">عن الشركة</a></li>
+                    <li><a href="contact.html" class="active" data-i18n="contactText">اتصل بنا</a></li>
+                </ul>
+                <div class="settings-panel">
+                    <div class="setting">
+                        <label for="language-switcher" data-i18n="languageLabel">اللغة</label>
+                        <select id="language-switcher">
+                            <option value="ar" data-i18n="langAr">العربية</option>
+                            <option value="en" data-i18n="langEn">English</option>
+                        </select>
+                    </div>
+                    <div class="setting">
+                        <label for="theme-switcher" data-i18n="themeLabel">لون الموقع</label>
+                        <select id="theme-switcher">
+                            <option value="default" data-i18n="defaultTheme">افتراضي</option>
+                            <option value="blue" data-i18n="blueTheme">أزرق</option>
+                            <option value="green" data-i18n="greenTheme">أخضر</option>
+                            <option value="warm" data-i18n="warmTheme">دافئ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
         </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
-        <h1>اتصل بنا</h1>
-        <p>نحن هنا للإجابة على جميع أسئلتك</p>
+        <h1 data-i18n="contactHeaderTitle">اتصل بنا</h1>
+        <p data-i18n="contactHeaderText">نحن هنا للإجابة على جميع أسئلتك</p>
     </section>
 
     <!-- Contact Section -->
@@ -36,96 +56,96 @@
             <div class="contact-content">
                 <!-- Contact Form -->
                 <div class="contact-form-wrapper">
-                    <h2>أرسل لنا رسالة</h2>
+                    <h2 data-i18n="contactFormHeading">أرسل لنا رسالة</h2>
                     <form class="contact-form" id="contactForm">
                         <div class="form-group">
-                            <label for="name">الاسم *</label>
+                            <label for="name" data-i18n="contactNameLabel">الاسم *</label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">البريد الإلكتروني *</label>
+                            <label for="email" data-i18n="contactEmailLabel">البريد الإلكتروني *</label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="phone">رقم الهاتف *</label>
+                            <label for="phone" data-i18n="contactPhoneLabel">رقم الهاتف *</label>
                             <input type="tel" id="phone" name="phone" required>
                         </div>
                         <div class="form-group">
-                            <label for="subject">الموضوع *</label>
+                            <label for="subject" data-i18n="contactSubjectLabel">الموضوع *</label>
                             <select id="subject" name="subject" required>
-                                <option value="">اختر الموضوع</option>
-                                <option value="inquiry">استفسار عام</option>
-                                <option value="order">استفسار عن الطلب</option>
-                                <option value="complaint">شكوى أو اقتراح</option>
-                                <option value="wholesale">طلب جملة</option>
-                                <option value="other">أخرى</option>
+                                <option value="" data-i18n="contactSubjectPlaceholder">اختر الموضوع</option>
+                                <option value="inquiry" data-i18n="contactSubjectInquiry">استفسار عام</option>
+                                <option value="order" data-i18n="contactSubjectOrder">استفسار عن الطلب</option>
+                                <option value="complaint" data-i18n="contactSubjectComplaint">شكوى أو اقتراح</option>
+                                <option value="wholesale" data-i18n="contactSubjectWholesale">طلب جملة</option>
+                                <option value="other" data-i18n="contactSubjectOther">أخرى</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">الرسالة *</label>
+                            <label for="message" data-i18n="contactMessageLabel">الرسالة *</label>
                             <textarea id="message" name="message" rows="6" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                        <button type="submit" class="btn btn-primary" data-i18n="contactSubmit">إرسال الرسالة</button>
                     </form>
                     <div id="formMessage" class="form-message"></div>
                 </div>
 
                 <!-- Contact Info -->
                 <div class="contact-info-wrapper">
-                    <h2>معلومات التواصل</h2>
+                    <h2 data-i18n="contactInfoTitle">معلومات التواصل</h2>
                     
                     <div class="contact-info">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>العنوان</h4>
-                            <p>الرياض، حي الملك فهد</p>
-                            <p>الطريق الدائري الشرقي</p>
-                            <p>المملكة العربية السعودية</p>
+                            <h4 data-i18n="contactAddressTitle">العنوان</h4>
+                            <p data-i18n="contactAddressLine1">الرياض، حي الملك فهد</p>
+                            <p data-i18n="contactAddressLine2">الطريق الدائري الشرقي</p>
+                            <p data-i18n="contactAddressLine3">المملكة العربية السعودية</p>
                         </div>
                     </div>
 
                     <div class="contact-info">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>الهاتف</h4>
-                            <p>+966 50 123 4567</p>
-                            <p>+966 11 456 7890</p>
+                            <h4 data-i18n="contactPhoneTitle">الهاتف</h4>
+                            <p data-i18n="contactPhoneLine1">+966 50 123 4567</p>
+                            <p data-i18n="contactPhoneLine2">+966 11 456 7890</p>
                         </div>
                     </div>
 
                     <div class="contact-info">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>البريد الإلكتروني</h4>
-                            <p>info@alhussein.com</p>
-                            <p>support@alhussein.com</p>
+                            <h4 data-i18n="contactEmailTitle">البريد الإلكتروني</h4>
+                            <p data-i18n="contactEmailLine1">info@alhussein.com</p>
+                            <p data-i18n="contactEmailLine2">support@alhussein.com</p>
                         </div>
                     </div>
 
                     <div class="contact-info">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>ساعات العمل</h4>
-                            <p>الأحد - الخميس: 9:00 ص - 10:00 م</p>
-                            <p>الجمعة والسبت: 2:00 م - 10:00 م</p>
+                            <h4 data-i18n="contactHoursTitle">ساعات العمل</h4>
+                            <p data-i18n="contactHoursLine1">الأحد - الخميس: 9:00 ص - 10:00 م</p>
+                            <p data-i18n="contactHoursLine2">الجمعة والسبت: 2:00 م - 10:00 م</p>
                         </div>
                     </div>
 
                     <!-- Social Media -->
                     <div class="social-section">
-                        <h4>تابعنا على وسائل التواصل</h4>
+                        <h4 data-i18n="socialFollow">تابعنا على وسائل التواصل</h4>
                         <div class="social-links-large">
                             <a href="https://facebook.com" target="_blank">
-                                <i class="fab fa-facebook"></i> فيسبوك
+                                <i class="fab fa-facebook"></i> <span data-i18n="socialFacebook">Facebook</span>
                             </a>
                             <a href="https://instagram.com" target="_blank">
-                                <i class="fab fa-instagram"></i> إنستاجرام
+                                <i class="fab fa-instagram"></i> <span data-i18n="socialInstagram">Instagram</span>
                             </a>
                             <a href="https://twitter.com" target="_blank">
-                                <i class="fab fa-twitter"></i> تويتر
+                                <i class="fab fa-twitter"></i> <span data-i18n="socialTwitter">Twitter</span>
                             </a>
                             <a href="https://wa.me" target="_blank">
-                                <i class="fab fa-whatsapp"></i> واتس آب
+                                <i class="fab fa-whatsapp"></i> <span data-i18n="socialWhatsApp">WhatsApp</span>
                             </a>
                         </div>
                     </div>
@@ -137,53 +157,53 @@
     <!-- FAQ Section -->
     <section class="faq">
         <div class="container">
-            <h2>الأسئلة الشائعة</h2>
+            <h2 data-i18n="faqTitle">الأسئلة الشائعة</h2>
             <div class="faq-items">
                 <div class="faq-item">
                     <h3 class="faq-question">
-                        <i class="fas fa-chevron-down"></i> كيف أطلب منتجات؟
+                        <i class="fas fa-chevron-down"></i> <span data-i18n="faqQ1">كيف أطلب منتجات؟</span>
                     </h3>
-                    <p class="faq-answer">
+                    <p class="faq-answer" data-i18n="faqA1">
                         يمكنك الطلب من خلال موقعنا الإلكتروني مباشرة أو التواصل معنا عبر الهاتف أو البريد الإلكتروني.
                     </p>
                 </div>
                 <div class="faq-item">
                     <h3 class="faq-question">
-                        <i class="fas fa-chevron-down"></i> ما هي تكاليف الشحن؟
+                        <i class="fas fa-chevron-down"></i> <span data-i18n="faqQ2">ما هي تكاليف الشحن؟</span>
                     </h3>
-                    <p class="faq-answer">
+                    <p class="faq-answer" data-i18n="faqA2">
                         الشحن مجاني للطلبات فوق 500 ريال. للطلبات الأقل، تكلفة الشحن 50 ريال داخل الرياض و100 ريال خارجها.
                     </p>
                 </div>
                 <div class="faq-item">
                     <h3 class="faq-question">
-                        <i class="fas fa-chevron-down"></i> هل هناك ضمان على المنتجات؟
+                        <i class="fas fa-chevron-down"></i> <span data-i18n="faqQ3">هل هناك ضمان على المنتجات؟</span>
                     </h3>
-                    <p class="faq-answer">
+                    <p class="faq-answer" data-i18n="faqA3">
                         نعم، جميع منتجاتنا مضمونة لمدة سنة واحدة من تاريخ الشراء ضد عيوب التصنيع.
                     </p>
                 </div>
                 <div class="faq-item">
                     <h3 class="faq-question">
-                        <i class="fas fa-chevron-down"></i> كم مدة التوصيل؟
+                        <i class="fas fa-chevron-down"></i> <span data-i18n="faqQ4">كم مدة التوصيل؟</span>
                     </h3>
-                    <p class="faq-answer">
+                    <p class="faq-answer" data-i18n="faqA4">
                         التوصيل يستغرق 2-3 أيام عمل داخل الرياض و4-5 أيام عمل خارجها.
                     </p>
                 </div>
                 <div class="faq-item">
                     <h3 class="faq-question">
-                        <i class="fas fa-chevron-down"></i> هل توجد عروض أو خصومات؟
+                        <i class="fas fa-chevron-down"></i> <span data-i18n="faqQ5">هل توجد عروض أو خصومات؟</span>
                     </h3>
-                    <p class="faq-answer">
+                    <p class="faq-answer" data-i18n="faqA5">
                         نعم، لدينا عروض موسمية ودعم للطلبات الكبيرة. تابع موقعنا للعروض الجديدة.
                     </p>
                 </div>
                 <div class="faq-item">
                     <h3 class="faq-question">
-                        <i class="fas fa-chevron-down"></i> هل تقبلون طلبات الجملة؟
+                        <i class="fas fa-chevron-down"></i> <span data-i18n="faqQ6">هل تقبلون طلبات الجملة؟</span>
                     </h3>
-                    <p class="faq-answer">
+                    <p class="faq-answer" data-i18n="faqA6">
                         نعم، نقبل طلبات الجملة بأسعار خاصة. يرجى التواصل معنا للحصول على عرض خاص.
                     </p>
                 </div>
@@ -196,20 +216,20 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>الحسين</h4>
-                    <p>متخصصون في صناعة الملابس الداخلية الفاخرة منذ 2010</p>
+                    <h4 data-i18n="footerTitleBrand">الحسين</h4>
+                    <p data-i18n="footerBrandText">متخصصون في صناعة الملابس الداخلية الفاخرة منذ 2010</p>
                 </div>
                 <div class="footer-section">
-                    <h4>الروابط السريعة</h4>
+                    <h4 data-i18n="footerLinksTitle">الروابط السريعة</h4>
                     <ul>
-                        <li><a href="index.html">الرئيسية</a></li>
-                        <li><a href="products.html">المنتجات</a></li>
-                        <li><a href="about.html">عن الشركة</a></li>
-                        <li><a href="contact.html">اتصل بنا</a></li>
+                        <li><a href="index.html" data-i18n="homeText">الرئيسية</a></li>
+                        <li><a href="products.html" data-i18n="productsText">المنتجات</a></li>
+                        <li><a href="about.html" data-i18n="aboutText">عن الشركة</a></li>
+                        <li><a href="contact.html" data-i18n="contactText">اتصل بنا</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>تابعنا</h4>
+                    <h4 data-i18n="socialFollow">تابعنا</h4>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -218,14 +238,14 @@
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>تواصل معنا</h4>
-                    <p>الهاتف: +966 50 123 4567</p>
-                    <p>البريد: info@alhussein.com</p>
-                    <p>العنوان: الرياض، المملكة العربية السعودية</p>
+                    <h4 data-i18n="footerContactTitle">تواصل معنا</h4>
+                    <p data-i18n="footerContactPhone">الهاتف: +966 50 123 4567</p>
+                    <p data-i18n="footerContactEmail">البريد: info@alhussein.com</p>
+                    <p data-i18n="footerContactAddress">العنوان: الرياض، المملكة العربية السعودية</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 الحسين. جميع الحقوق محفوظة.</p>
+                <p data-i18n="footerCopy">&copy; 2026 الحسين. جميع الحقوق محفوظة.</p>
             </div>
         </div>
     </footer>
