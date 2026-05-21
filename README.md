@@ -105,7 +105,7 @@ e:\husen\
     <div class="product-details">
         <span class="color">الألوان: أسود، أبيض</span>
     </div>
-    <div class="price">السعر ريال</div>
+    <div class="price">السعر ليرة سورية</div>
     <button class="btn btn-primary add-to-cart">أضف للسلة</button>
 </div>
 ```
